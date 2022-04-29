@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Covatubala.github.io</id>
     <title>Covatubala的小木屋</title>
-    <updated>2022-04-29T06:46:42.543Z</updated>
+    <updated>2022-04-29T12:41:10.762Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Covatubala.github.io"/>
     <link rel="self" href="https://Covatubala.github.io/atom.xml"/>
@@ -11,38 +11,23 @@
     <icon>https://Covatubala.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Covatubala的小木屋</rights>
     <entry>
-        <title type="html"><![CDATA[利用Gridea以及Github搭建个人博客]]></title>
+        <title type="html"><![CDATA[这个博客的诞生历程]]></title>
         <id>https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/</id>
         <link href="https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/">
         </link>
         <updated>2022-04-29T06:06:16.000Z</updated>
-        <summary type="html"><![CDATA[<ul>
-<li>待填坑：<a href="https://www.bilibili.com/video/BV1pW41167qP?spm_id_from=333.337.search-card.all.click">gitalk</a></li>
-</ul>
-<pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
-</code></pre>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><annotation encoding="application/x-tex">\sum\limits_{i=1}^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.329066em;vertical-align:-0.9776689999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513970000000004em;"><span style="top:-2.122331em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0000050000000003em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op">∑</span></span></span><span style="top:-3.950005em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9776689999999999em;"><span></span></span></span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mrow><annotation encoding="application/x-tex">\sum\limits_{i=1}^n 
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span></span></span></span></span></p>
-<pre><code>awesome
-hhhhhhhhh
-</code></pre>
-]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>待填坑：<a href="https://www.bilibili.com/video/BV1pW41167qP?spm_id_from=333.337.search-card.all.click">gitalk</a></li>
-</ul>
-<pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
-</code></pre>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><annotation encoding="application/x-tex">\sum\limits_{i=1}^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.329066em;vertical-align:-0.9776689999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513970000000004em;"><span style="top:-2.122331em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0000050000000003em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op">∑</span></span></span><span style="top:-3.950005em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9776689999999999em;"><span></span></span></span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mrow><annotation encoding="application/x-tex">\sum\limits_{i=1}^n 
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span></span></span></span></span></p>
-<pre><code>awesome
-hhhhhhhhh
-</code></pre>
-<!-- more -->
-<p>www</p>
-<!-- more -->
-<p>www</p>
+        <content type="html"><![CDATA[<p>搭建博客过程中有价值的教程都在这里：<br>
+http://www.360doc.com/content/19/0908/13/56488491_859823141.shtml<br>
+https://blog.csdn.net/weixin_43128203/article/details/120713831<br>
+https://www.jianshu.com/p/1520e4872a2c<br>
+https://www.bilibili.com/read/cv5884200/<br>
+https://zhuanlan.zhihu.com/p/258592325<br>
+https://yeming.site/post/gridea_help/<br>
+https://yeming.site/post/gridea-setup/<br>
+https://github.com/getgridea/gridea/issues<br>
+https://www.bilibili.com/video/BV1tr4y1e75b/?spm_id_from=333.788.recommend_more_video.0<br>
+https://www.bilibili.com/video/BV1yy4y1n7N3/?spm_id_from=333.788.recommend_more_video.4<br>
+https://www.bilibili.com/video/BV1tr4y1e75b/?spm_id_from=333.788.recommend_more_video.-1</p>
 ]]></content>
     </entry>
     <entry>
