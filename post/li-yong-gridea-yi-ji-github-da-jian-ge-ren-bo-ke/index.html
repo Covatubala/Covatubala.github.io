@@ -100,6 +100,12 @@ hhhhhhhhh
       </div>
 
       
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
 
       
 
@@ -276,6 +282,28 @@ hhhhhhhhh
     initImg();
   </script>
   
+  
+    
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script type="application/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script type="application/javascript">
+
+  var gitalk = new Gitalk({
+    clientID: 'dced8d18bb3ce4622a5e',
+    clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
+    repo: 'Covatubala.github.io',
+    owner: 'Covatubala',
+    admin: ['Covatubala'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+    
   
 </body>
 
