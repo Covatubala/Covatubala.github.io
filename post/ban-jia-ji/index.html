@@ -1,68 +1,108 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
 
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>搬家记 - Covatubala的小木屋</title>
-<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://Covatubala.github.io/media/css/tailwind.css">
+<title>搬家记 | Covatubala的小木屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1653548304519">
 <link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="搬家记 - Covatubala的小木屋 - Atom Feed" href="https://Covatubala.github.io/atom.xml">
 
-    
 
-  <meta name="description" content="【大一开学搬家记】
-额，大概率已经很久不写记录了，因为浪费时间且每天颓废的很快乐然后不需要也没有什么需要记录的，但是这次搬家有点离谱，所以就气呼呼的打算记录一下。
-计划8.23白天军训，晚上19：00开始搬家，所以故事从晚上18：00军训结..." />
-  <meta property="og:title" content="搬家记 - Covatubala的小木屋">
-  <meta property="og:description" content="【大一开学搬家记】
-额，大概率已经很久不写记录了，因为浪费时间且每天颓废的很快乐然后不需要也没有什么需要记录的，但是这次搬家有点离谱，所以就气呼呼的打算记录一下。
-计划8.23白天军训，晚上19：00开始搬家，所以故事从晚上18：00军训结..." />
-  <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://Covatubala.github.io/post/ban-jia-ji/" />
-  <meta property="og:image" content="https://Covatubala.github.io/images/avatar.png">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="搬家记 - Covatubala的小木屋">
-  <meta name="twitter:description" content="【大一开学搬家记】
-额，大概率已经很久不写记录了，因为浪费时间且每天颓废的很快乐然后不需要也没有什么需要记录的，但是这次搬家有点离谱，所以就气呼呼的打算记录一下。
-计划8.23白天军训，晚上19：00开始搬家，所以故事从晚上18：00军训结...">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://Covatubala.github.io/post/ban-jia-ji/">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
- 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
   
 
   
-</head>
 
-<body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
-    <a href="https://Covatubala.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
-      Covatubala的小木屋
-    </a>
-    <div class="max-w-4xl w-full mx-auto">
-      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
-        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          搬家记
-        </h1>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="【大一开学搬家记】
+额，大概率已经很久不写记录了，因为浪费时间且每天颓废的很快乐然后不需要也没有什么需要记录的，但是这次搬家有点离谱，所以就气呼呼的打算记录一下。
+计划8.23白天军训，晚上19：00开始搬家，所以故事从晚上18：00军训结..." />
+    <meta name="keywords" content="回忆" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Covatubala.github.io">
+        <img src="https://Covatubala.github.io/images/avatar.png?v=1653548304519" class="site-logo">
+        <h1 class="site-title">Covatubala的小木屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-        <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2022-04-30 · 5 min read</div>
-          
-            <a href="https://Covatubala.github.io/tag/2i4DXCL_6/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
-              <i class="ri-hashtag"></i>
-              回忆
-            </a>
-          
-        </div>
-        <div class="markdown mb-8" v-pre>
-          <p>【大一开学搬家记】<br>
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      若是心向明月，纵然不慎受挫也会失落在星辰之间。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">搬家记</h2>
+            <div class="post-date">2022-04-30</div>
+            
+            <div class="post-content" v-pre>
+              <p>【大一开学搬家记】<br>
 额，大概率已经很久不写记录了，因为浪费时间且每天颓废的很快乐然后不需要也没有什么需要记录的，但是这次搬家有点离谱，所以就气呼呼的打算记录一下。<br>
 计划8.23白天军训，晚上19：00开始搬家，所以故事从晚上18：00军训结束开始。<br>
 话说在二餐大快朵颐后，想起车子还在军训地点，所以骑上哈喽就回去找车子。果然还是没有记住军训地点，穿过了一座陌生的桥，再一次的找错位置后，进入了一片原始森林，然后推着车子走了一段路，发现已经靠近游泳馆了。选择一位幸运路人问路后发现军训地点就在左边路直走，然后意识到上午也是在这个地方迷失且问路的。<br>
@@ -70,230 +110,82 @@
 回来意识到已经20：30，所以欣然投入资本的怀抱，打算自己也打个车，然后就开始紧张迅速的收拾，额，但是还是很慢慢悠悠。发现自己的东西变得很臃肿，开始意识到打包能力不行的事实，最后总算是整完了，直接就打了车。到了才发现自己的行李都在三楼，还要一个一个非常费时间的拿到一楼，这个过程非常的累，总之最后非常艰辛的把所有的东西都放到了出租车上。然后自己骑着车子跟在出租车后边，此时脑子有点懵，但还是发现好像路走的不是很对劲，等到地方就发现自己最终地点订错了订成了西15号楼，于是又是一番折腾，主要是心累，最终到了东15号楼。到了又是登记又是扫码加群聊拿钥匙领空调遥控器，和同学一起把东西搬进120宿舍，然后打算放松然后好好慢慢悠悠的整理东西，然后就发现了远古巨无霸蟑螂。然后就用大神拖鞋直接拍死，此时已经有些害怕了，但还是把它拍照警醒宿舍的同学们，但还是继续整理东西擦柜子什么的，因为这栋楼是旧楼翻新，灰尘之类的很多。23：10左右已经买了两瓶快乐水，东西收拾的着实不多，所以就打算先睡觉明天再整理，然后就发现妈妈发过来的床垫宽很多，放在床上根本动不了，心里就很窝气。但还是这样睡觉了，宿舍里也很热。<br>
 半夜3：00，被奇怪的碰撞声音吵醒，是不间断的声音让我逐渐的那种苏醒，意识到一定是蟑螂，于是镇定下来仔细听的确像是，然后打开手电筒发现刚刚3：00，往下边一照就没有声音了，此时已经确定是蟑螂搞的鬼，就根本没有睡觉的念头了，满脑子都是斩妖除魔。所以果断下床，开灯，等待机会的出现，在等待1h左右后，终于有蟑螂从地上经过我放在地上的脏裤子，果断起身，它意识到我的苏醒于是躲到裤子里，我强忍恶心，疯狂摇晃我的裤子把它摇了出来，并再次一记大神拖鞋将它斩于鞋下，此时就更恶心了，但是已经没有机会睡觉了，所以强撑着准备收拾东西，接下来就更崩溃了，昨天擦了一晚上的下面的桌子，因为睡了一觉，床木板上的灰尘和木头渣子什么的全掉下来白弄了，这个时候心态已经没有了，感觉已经要呆滞了，然后又去收拾柜子的东西发现自己如果住第一个位置，两个柜子都是最高的位置根本等价于没有柜子，直接破防了。这波连环打击让我彻底的人傻了，饭都不想吃。后来就去体检了。</p>
 
-        </div>
-        <!-- Share to Twitter, Weibo, Telegram -->
-        <div class="flex items-center">
-          <div class="mr-4 flex items-center">
-            <i class="ri-share-forward-line text-gray-500"></i>
-          </div>
-          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
-            <i class="ri-twitter-line"></i>
-          </div>
-          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
-            <i class="ri-weibo-line"></i>
-          </div>
-          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
-            <i class="ri-telegram-line"></i>
-          </div>
-        </div>
-      </div>
-
-      
-        
-          <div id="gitalk-container"></div>
-        
-
-        
-      
-
-      
-
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</footer>
-    </div>
-
-    <!-- TOC Container -->
-    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
-      <i class="ri-file-list-line"></i>
-    </div>
-
-    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
-      <div class="flex mb-4 justify-end">
-        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
-          <i class="ri-close-line text-lg"></i>
-        </div>
-      </div>
-      <div class="post-toc-container">
-        
-      </div>
-    </div>
-
-    <!-- Back to top -->
-    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
-      <i class="ri-arrow-up-line"></i>
-    </div>
-  </div>
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-  <!-- Background of PhotoSwipe. 
-        It's a separate element as animating opacity is faster than rgba(). -->
-  <div class="pswp__bg">
-  </div>
-  <!-- Slides wrapper with overflow:hidden. -->
-  <div class="pswp__scroll-wrap">
-    <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-    <div class="pswp__container">
-      <div class="pswp__item">
-      </div>
-      <div class="pswp__item">
-      </div>
-      <div class="pswp__item">
-      </div>
-    </div>
-    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-    <div class="pswp__ui pswp__ui--hidden">
-      <div class="pswp__top-bar">
-        <!--  Controls are self-explanatory. Order can be changed. -->
-        <div class="pswp__counter">
-        </div>
-        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-        <!-- element will get class pswp__preloader--active when preloader is running -->
-        <div class="pswp__preloader">
-          <div class="pswp__preloader__icn">
-            <div class="pswp__preloader__cut">
-              <div class="pswp__preloader__donut">
-              </div>
             </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://Covatubala.github.io/tag/2i4DXCL_6/" class="tag">
+                    回忆
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Covatubala.github.io/post/chu-tou/">
+                  <h3 class="post-title">
+                    出头
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-        </div>
-      </div>
-      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-        <div class="pswp__share-tooltip">
-        </div>
-      </div>
-      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-      </button>
-      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-      </button>
-      <div class="pswp__caption">
-        <div class="pswp__caption__center">
+
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://Covatubala.github.io/media/scripts/main.js"></script>
-  
-  <!-- Code Highlight -->
-  
-
-  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
-  <script>
-    //拿到预览框架，也就是上面的html代码
-    var pswpElement = document.querySelectorAll('.pswp')[0];
-    //定义图片数组变量
-    var imgitems;
-    /**
-    * 用于显示预览界面
-    * @param index 图片数组下标
-    */
-    function viewImg(index) {
-      //其它选项这里不做过多阐述，详情见官网
-      var pswpoptions = {
-        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
-        bgOpacity: 0.7, // 背景透明度，0-1
-        maxSpreadZoom: 3, // 缩放级别，不要太大
-      };
-      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
-      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
-      gallery.init()
-    }
-    /**
-    * 用于添加图片点击事件
-    * @param img 图片元素
-    * @param index 所属下标（在imgitems中的位置）
-    */
-    function addImgClick(img, index) {
-      img.onclick = function() {
-        viewImg(index)
-      }
-    }
-    /**
-    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
-    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
-    * 异步加载图片可在图片元素创建完成后调用此方法
-    */
-    function initImg() {
-      //重置图片数组
-      imgitems = [];
-      //查找class:markdown 下的所有img元素并遍历
-      var imgs = document.querySelectorAll('.markdown img');
-      for (var i = 0; i < imgs.length; i++) {
-        var img = imgs[i];
-        //本站相册初始为loading图片，真实图片放在data-src
-        var ds = img.getAttribute("data-src");
-        //创建image对象，用于获取图片宽高
-        var imgtemp = new Image();
-        //判断是否存在data-src
-        if (ds != null && ds.length > 0) {
-          imgtemp.src = ds
-        } else {
-          imgtemp.src = img.src
-        }
-        //判断是否存在缓存
-        if (imgtemp.complete) {
-          var imgobj = {
-            "src": imgtemp.src,
-            "w": imgtemp.width,
-            "h": imgtemp.height,
-          };
-          imgitems[i] = imgobj;
-          addImgClick(img, i);
-        } else {
-          console.log('进来了2')
-          imgtemp.index = i;
-          imgtemp.img = img;
-          imgtemp.onload = function() {
-            var imgobj = {
-              "src": this.src,
-              "w": this.width,
-              "h": this.height,
-            };
-            //不要使用push，因为onload前后顺序会不同
-            imgitems[this.index] = imgobj
-            //添加点击事件
-            addImgClick(this.img, this.index);
-          }
-        }
-      }
-    }
-    //初始化
-    initImg();
-  </script>
-  
-  
-    
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script type="application/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
-  var gitalk = new Gitalk({
-    clientID: 'dced8d18bb3ce4622a5e',
-    clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
-    repo: 'covatubala.github.io',
-    owner: 'Covatubala',
-    admin: ['Covatubala'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+AOS.init();
 
-  gitalk.render('gitalk-container')
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-    
-  
-</body>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dced8d18bb3ce4622a5e',
+        clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
+        repo: 'covatubala.github.io',
+        owner: 'Covatubala',
+        admin: ['Covatubala'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
 </html>

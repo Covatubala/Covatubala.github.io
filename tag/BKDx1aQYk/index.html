@@ -1,154 +1,168 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Covatubala的小木屋</title>
-<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://Covatubala.github.io/media/css/tailwind.css">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>教学向 | Covatubala的小木屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1653548304519">
 <link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Covatubala的小木屋 - Atom Feed" href="https://Covatubala.github.io/atom.xml">
 
-    
 
-  <meta name="description" content="若是心向明月，纵然不慎受挫也会失落在星辰之间。" />
-</head>
-<body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
-  <div class="flex justify-end px-4">
-    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
-      <i class="ri-close-line" v-show="showMenu"></i>
-      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="若是心向明月，纵然不慎受挫也会失落在星辰之间。">
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Covatubala.github.io">
+        <img src="https://Covatubala.github.io/images/avatar.png?v=1653548304519" class="site-logo">
+        <h1 class="site-title">Covatubala的小木屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
-    
-      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        首页
-      </a>
-    
-      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        归档
-      </a>
-    
-      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        标签
-      </a>
-    
-      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        关于
-      </a>
-    
-    <a href="https://Covatubala.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      RSS
-    </a>
-  </nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      若是心向明月，纵然不慎受挫也会失落在星辰之间。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
-    <div class="max-w-4xl w-full mx-auto pt-32">
-      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
-        <i class="ri-hashtag"></i>
-        教学向
-      </h1>
-      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-        
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/zhuo-da-sheng-ji-zhi-lu/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          桌搭升级之路
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-05-05</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        如果你看到我最近又开始吃盒饭，那可能是添置了新的外设。
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: 教学向</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/zhuo-da-sheng-ji-zhi-lu/">
+                  <h2 class="post-title">桌搭升级之路</h2>
+                </a>
+                <div class="post-date">
+                  2022-05-05
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/">
+                  <h2 class="post-title">提升幸福感的一些软件搭配</h2>
+                </a>
+                <div class="post-date">
+                  2022-05-05
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/">
+                  <h2 class="post-title">这个博客的诞生历程</h2>
+                </a>
+                <div class="post-date">
+                  2022-04-29
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
 
-
-
-高二升高三暑假
-没有精力和财力去捯饬
-
-破旧插排
-一千多买的垃圾海尔电脑，编译一个程序需要20s
-19.9买的Dell鼠标，能用
-小型加湿器，用以抵抗北方干燥的环境
-
-
-高三寒...
-      </div>
-      <a href="https://Covatubala.github.io/post/zhuo-da-sheng-ji-zhi-lu/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          提升幸福感的一些软件搭配
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-05-05</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        
-
-TranslucentTB+WallPaper Engine+Rocket Dock
-
-
-
-Neat Converter
-格式转换器
-
-
-
-CP Editor+Codeforces Contest Helper
-谁用谁知道，爽爆，要是我...
-      </div>
-      <a href="https://Covatubala.github.io/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          这个博客的诞生历程
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-04-29</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        2022年4月末的某一天，上海疫情已两月不止，囿于宿舍的我又一次无可奈何地打开高等数学准备写作业，脑海中突然闪出一道光芒，指引着我打开了Antileaf曾经的博客，紧紧跟随他在博客中的指示打开了他最新的网站，被他精美的博客设计以及插图震撼，...
-      </div>
-      <a href="https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
+          <div class="pagination-container">
   
+  
+</div>
+
+        </div>
       </div>
-
-      
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</footer>
-
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://Covatubala.github.io/media/scripts/main.js"></script>
-</body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
 </html>

@@ -1,168 +1,185 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Covatubala的小木屋</title>
-<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://Covatubala.github.io/media/css/tailwind.css">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>随笔 | Covatubala的小木屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1653548304519">
 <link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Covatubala的小木屋 - Atom Feed" href="https://Covatubala.github.io/atom.xml">
 
-    
 
-  <meta name="description" content="若是心向明月，纵然不慎受挫也会失落在星辰之间。" />
-</head>
-<body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
-  <div class="flex justify-end px-4">
-    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
-      <i class="ri-close-line" v-show="showMenu"></i>
-      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="若是心向明月，纵然不慎受挫也会失落在星辰之间。">
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Covatubala.github.io">
+        <img src="https://Covatubala.github.io/images/avatar.png?v=1653548304519" class="site-logo">
+        <h1 class="site-title">Covatubala的小木屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
-    
-      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        首页
-      </a>
-    
-      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        归档
-      </a>
-    
-      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        标签
-      </a>
-    
-      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        关于
-      </a>
-    
-    <a href="https://Covatubala.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      RSS
-    </a>
-  </nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      若是心向明月，纵然不慎受挫也会失落在星辰之间。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
-    <div class="max-w-4xl w-full mx-auto pt-32">
-      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
-        <i class="ri-hashtag"></i>
-        随笔
-      </h1>
-      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-        
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/ke-fu-nai-tou-le/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          克服奶头乐
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-04-30</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        
-追求轻微痛感，如起床后洗冷水澡，锻炼身体，间歇性断食
-掌控快感释放，先做困难事
-降低奖励期待，控制欲望
-延迟消费控制多巴胺分泌，如冥想观息五分钟
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: 随笔</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/ke-fu-nai-tou-le/">
+                  <h2 class="post-title">克服奶头乐</h2>
+                </a>
+                <div class="post-date">
+                  2022-04-30
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/gan-qing-que-shi/">
+                  <h2 class="post-title">感情缺失</h2>
+                </a>
+                <div class="post-date">
+                  2022-04-30
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/wai-re-nei-leng/">
+                  <h2 class="post-title">外热内冷</h2>
+                </a>
+                <div class="post-date">
+                  2022-04-30
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://Covatubala.github.io/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/">
+                  <h2 class="post-title">《张居正》书评</h2>
+                </a>
+                <div class="post-date">
+                  2022-04-30
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+            </article>
+          
 
-      </div>
-      <a href="https://Covatubala.github.io/post/ke-fu-nai-tou-le/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/gan-qing-que-shi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          感情缺失
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-04-30</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        简单来说，我这样的情感缺失者，在生活中往往会缺少以下许多东西。
-1.缺乏共情能力。很难感同身受地体会到他人的笑点或者泪点，对于笑话、悲剧、文艺、矫情等绝大多数故事并无特别大的感触，甚至觉得如白开水一般平铺直叙，面对亲人的去世，在其他人哭成一...
-      </div>
-      <a href="https://Covatubala.github.io/post/gan-qing-que-shi/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/wai-re-nei-leng/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          外热内冷
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-04-30</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        外热内冷对于我来说是一个非常自然的表现不是刻意的 更不是装的 就是在大众面前有自然的热情 与其说是热情 其实更应该算表现欲
-但在和熟悉的人独处时又会不自觉的变得冷淡
-事实上我应该算是一个温柔的人但对于很多事情我都会持不关心 不在意的心理
-这...
-      </div>
-      <a href="https://Covatubala.github.io/post/wai-re-nei-leng/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://Covatubala.github.io/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          《张居正》书评
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2022-04-30</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        高三课堂上便屡屡从语文老师嘴里听闻《张居正》的大名。
-茅盾文学奖作品，又是历史小说系列，一想便是缺了点兴趣去看的。前几天刚看完《上海堡垒，一时间悲喜交集不能自已，在kindlekindlekindle上连下了好几本知乎上推荐的历史小说，其中...
-      </div>
-      <a href="https://Covatubala.github.io/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/" class="btn">
-        Read more
-      </a>
-    </div>
-    
-  </div>
+          <div class="pagination-container">
   
+    <a href="https://Covatubala.github.io/tag/p16lvNA2a" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
+  
+  
+</div>
+
+        </div>
       </div>
-
-      
-  <div class="my-4 flex justify-between px-4 md:px-0">
-    
-      <a href="https://Covatubala.github.io/tag/p16lvNA2a" class="btn btn-white">
-        <i class="ri-arrow-left-line mr-4"></i>
-        上一页
-      </a>
-    
-    
-  </div>
-
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</footer>
-
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://Covatubala.github.io/media/scripts/main.js"></script>
-</body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
 </html>
