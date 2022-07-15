@@ -1,210 +1,184 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
-<title>文章归档 | Covatubala的小木屋</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1657852953047">
-<link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Covatubala的小木屋</title>
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1657898097924">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Covatubala的小木屋 - Atom Feed" href="http://localhost:4000/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="若是心向明月，纵然不慎受挫也会失落在星辰之间。">
+    <meta name="description" content="若是心向明月，纵然不慎受挫也会失落在星辰之间。" />
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://Covatubala.github.io">
-        <img src="https://Covatubala.github.io/images/avatar.png?v=1657852953047" class="site-logo">
-        <h1 class="site-title">Covatubala的小木屋</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://localhost:4000">
+  <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1657898097924" alt="">
+  </a>
+  <h1 class="site-title">
+    Covatubala的小木屋
+  </h1>
+  <p class="site-description">
+    若是心向明月，纵然不慎受挫也会失落在星辰之间。
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+        <a href="https://github.com/Covatubala" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
       
-        
+    
       
-        
+        <a href="https://twitter.com/Covatubala" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
       
-        
+    
       
-        
+    
       
-    </div>
-    <div class="site-description">
-      若是心向明月，纵然不慎受挫也会失落在星辰之间。
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+        <a href="https://www.zhihu.com/people/ren-zi-hang-23" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
   </div>
 </div>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          
+    
+        
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2022</h2>
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/tong-yu-zui-duan-lu/">
-                      <h2 class="post-title">
-                        同余最短路
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/zhuo-da-sheng-ji-zhi-lu/">
-                      <h2 class="post-title">
-                        桌搭升级之路
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/">
-                      <h2 class="post-title">
-                        提升幸福感的一些软件搭配
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/dread-hunger-ji-zhi/">
-                      <h2 class="post-title">
-                        Dread Hunger机制
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/round-782-div-2/">
-                      <h2 class="post-title">
-                        Round #782 (Div. 2)
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/round-780-div-3/">
-                      <h2 class="post-title">
-                        Round #780 (Div. 3)
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/">
-                      <h2 class="post-title">
-                        《张居正》书评
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/">
-                      <h2 class="post-title">
-                        这个博客的诞生历程
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
+<div class="archives-container">
+  
+    <h2 class="year">2022</h2>
+    
+      
+        <a href="http://localhost:4000/post/tong-yu-zui-duan-lu/" class="post">
+          <h2 class="post-title">
+            同余最短路
+          </h2>
+          <div class="time">2022-05-05</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/zhuo-da-sheng-ji-zhi-lu/" class="post">
+          <h2 class="post-title">
+            桌搭升级之路
+          </h2>
+          <div class="time">2022-05-05</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/" class="post">
+          <h2 class="post-title">
+            提升幸福感的一些软件搭配
+          </h2>
+          <div class="time">2022-05-05</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/dread-hunger-ji-zhi/" class="post">
+          <h2 class="post-title">
+            Dread Hunger机制
+          </h2>
+          <div class="time">2022-05-01</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/round-782-div-2/" class="post">
+          <h2 class="post-title">
+            Round #782 (Div. 2)
+          </h2>
+          <div class="time">2022-04-30</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/round-780-div-3/" class="post">
+          <h2 class="post-title">
+            Round #780 (Div. 3)
+          </h2>
+          <div class="time">2022-04-30</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/" class="post">
+          <h2 class="post-title">
+            《张居正》书评
+          </h2>
+          <div class="time">2022-04-30</div>
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/" class="post">
+          <h2 class="post-title">
+            这个博客的诞生历程
+          </h2>
+          <div class="time">2022-04-29</div>
+        </a>
+      
+    
+  
+</div>
 
-          <div class="pagination-container">
+    
+        <div class="pagination-container">
   
   
 </div>
 
-        </div>
+    
+        <div class="site-footer">
+  Powered by&nbsp<a href="https://github.com/getgridea/gridea"> Gridea</ a>
+  <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+
       </div>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
-
-
   </body>
 </html>

@@ -1,106 +1,111 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>这个博客的诞生历程 | Covatubala的小木屋</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1657852953047">
-<link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1657898097924">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="这个博客的诞生历程 | Covatubala的小木屋 - Atom Feed" href="http://localhost:4000/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
     <meta name="description" content="2022年4月末的某一天，上海疫情已两月不止，囿于宿舍的我又一次无可奈何地打开高等数学准备写作业，脑海中突然闪出一道光芒，指引着我打开了Antileaf曾经的博客，紧紧跟随他在博客中的指示打开了他最新的网站，被他精美的博客设计以及插图震撼，..." />
     <meta name="keywords" content="教学向" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://Covatubala.github.io">
-        <img src="https://Covatubala.github.io/images/avatar.png?v=1657852953047" class="site-logo">
-        <h1 class="site-title">Covatubala的小木屋</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://localhost:4000">
+  <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1657898097924" alt="">
+  </a>
+  <h1 class="site-title">
+    Covatubala的小木屋
+  </h1>
+  <p class="site-description">
+    若是心向明月，纵然不慎受挫也会失落在星辰之间。
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+        <a href="https://github.com/Covatubala" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
       
-        
+    
       
-        
+        <a href="https://twitter.com/Covatubala" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
       
-        
+    
       
-        
+    
       
-    </div>
-    <div class="site-description">
-      若是心向明月，纵然不慎受挫也会失落在星辰之间。
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+        <a href="https://www.zhihu.com/people/ren-zi-hang-23" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
   </div>
 </div>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">这个博客的诞生历程</h2>
-            <div class="post-date">2022-04-29</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              这个博客的诞生历程
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-04-29
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="http://localhost:4000/tag/BKDx1aQYk/" class="post-tag">
+                  # 教学向
+                </a>
+              
+            </div>
             
-            <div class="post-content" v-pre>
-              <p>2022年4月末的某一天，上海疫情已两月不止，囿于宿舍的我又一次无可奈何地打开高等数学准备写作业，脑海中突然闪出一道光芒，指引着我打开了<a href="https://www.cnblogs.com/hzoier/">Antileaf曾经的博客</a>，紧紧跟随他在博客中的指示打开了他<a href="https://antileafqwq.fun">最新的网站</a>，被他精美的博客设计以及插图震撼，也随之想起了之前自己反复思考却未下定决心实施的想法——我想有一个完全自主的，不受他人控制的博客，不需要有很多人来欣赏，更多的是我想做到随意输出。<br>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>2022年4月末的某一天，上海疫情已两月不止，囿于宿舍的我又一次无可奈何地打开高等数学准备写作业，脑海中突然闪出一道光芒，指引着我打开了<a href="https://www.cnblogs.com/hzoier/">Antileaf曾经的博客</a>，紧紧跟随他在博客中的指示打开了他<a href="https://antileafqwq.fun">最新的网站</a>，被他精美的博客设计以及插图震撼，也随之想起了之前自己反复思考却未下定决心实施的想法——我想有一个完全自主的，不受他人控制的博客，不需要有很多人来欣赏，更多的是我想做到随意输出。<br>
 其实，我倒也不是个只思考不行动的懒家伙，之前的日子里我也尝试过很多办法。<br>
 比如自学网页设计相关<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mi>t</mi><mi>m</mi><mi>l</mi><mo separator="true">,</mo><mi>c</mi><mi>s</mi><mi>s</mi><mo separator="true">,</mo><mi>j</mi><mi>a</mi><mi>v</mi><mi>a</mi><mi>s</mi><mi>c</mi><mi>r</mi><mi>i</mi><mi>p</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">html,css,javascript</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">h</span><span class="mord mathdefault">t</span><span class="mord mathdefault">m</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">s</span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">c</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">i</span><span class="mord mathdefault">p</span><span class="mord mathdefault">t</span></span></span></span>，我去问羊驼相关咨询，他直接把学校网站的账号密码和他的课程笔记给我，让我跟上网课进度。<br>
 比如听ACM班学长在腾讯会议里1对3讲课，分四次授课每次至少两小时起步，课程结束后还有答疑时间，倾囊相授，知无不言言无不尽。<br>
@@ -126,73 +131,94 @@ spm_id_from=333.788.recommend_more_video.-1
 https://zhuanlan.zhihu.com/p/341543249
 </code></pre>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://Covatubala.github.io/tag/BKDx1aQYk/" class="tag">
-                    教学向
-                  </a>
+              </div>
+              <div class="toc-container">
                 
               </div>
-            
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+            </div>
+          </article>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+        
 
-AOS.init();
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'dced8d18bb3ce4622a5e',
+    clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
+    repo: 'covatubala.github.io',
+    owner: 'Covatubala',
+    admin: ['Covatubala'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by&nbsp<a href="https://github.com/getgridea/gridea"> Gridea</ a>
+  <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
 
 
+      </div>
+    </div>
 
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
+      hljs.initHighlightingOnLoad()
 
-      var gitalk = new Gitalk({
-        clientID: 'dced8d18bb3ce4622a5e',
-        clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
-        repo: 'covatubala.github.io',
-        owner: 'Covatubala',
-        admin: ['Covatubala'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-      gitalk.render('gitalk-container')
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
 
     </script>
-  
-
-  
-
-
-
-
   </body>
 </html>
