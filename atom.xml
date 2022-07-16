@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://Covatubala.github.io</id>
     <title>Covatubala的小木屋</title>
-    <updated>2022-07-15T15:14:59.805Z</updated>
+    <updated>2022-07-16T02:48:52.110Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://Covatubala.github.io"/>
+    <link rel="self" href="https://Covatubala.github.io/atom.xml"/>
     <subtitle>若是心向明月，纵然不慎受挫也会失落在星辰之间。</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://Covatubala.github.io/images/avatar.png</logo>
+    <icon>https://Covatubala.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Covatubala的小木屋</rights>
     <entry>
         <title type="html"><![CDATA[同余最短路]]></title>
-        <id>http://localhost:4000/post/tong-yu-zui-duan-lu/</id>
-        <link href="http://localhost:4000/post/tong-yu-zui-duan-lu/">
+        <id>https://Covatubala.github.io/post/tong-yu-zui-duan-lu/</id>
+        <link href="https://Covatubala.github.io/post/tong-yu-zui-duan-lu/">
         </link>
         <updated>2022-05-05T08:12:39.000Z</updated>
         <content type="html"><![CDATA[<p>（室友不会，我发现我也不会。<br>
@@ -27,15 +27,15 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[桌搭升级之路]]></title>
-        <id>http://localhost:4000/post/zhuo-da-sheng-ji-zhi-lu/</id>
-        <link href="http://localhost:4000/post/zhuo-da-sheng-ji-zhi-lu/">
+        <id>https://Covatubala.github.io/post/zhuo-da-sheng-ji-zhi-lu/</id>
+        <link href="https://Covatubala.github.io/post/zhuo-da-sheng-ji-zhi-lu/">
         </link>
         <updated>2022-05-05T02:02:03.000Z</updated>
         <content type="html"><![CDATA[<p>如果你看到我最近又开始吃盒饭，那可能是添置了新的外设。</p>
 <!-- 所以这到底有啥用 -->
 <!-- 下边是摘要分隔符 -->
-<p><img src="http://localhost:4000/post-images/1651718844156.JPG" alt="" loading="lazy"><br>
-<img src="http://localhost:4000/post-images/1651718921273.jpg" alt="" loading="lazy"><br>
+<p><img src="https://Covatubala.github.io/post-images/1651718844156.JPG" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651718921273.jpg" alt="" loading="lazy"><br>
 高二升高三暑假<br>
 没有精力和财力去捯饬</p>
 <ul>
@@ -44,14 +44,14 @@
 <li>19.9买的Dell鼠标，能用</li>
 <li>小型加湿器，用以抵抗北方干燥的环境</li>
 </ul>
-<p><img src="http://localhost:4000/post-images/1651718917243.jpg" alt="" loading="lazy"><br>
+<p><img src="https://Covatubala.github.io/post-images/1651718917243.jpg" alt="" loading="lazy"><br>
 高三寒假<br>
 因为疫情不能回家过年，借住在同学租的泰华学府，没有独立经济能力，攒了很久，有了1500左右</p>
 <ul>
 <li>C-FORCE便捷显示屏，用来和我的P30连接，磨砂质感，效果很好，而且能外接显示屏和手机双开，比如显示屏里投屏腾讯会议，手机里打着王者荣耀</li>
 <li>JDread，陪伴了我寒假和整个高三下学期，无数个夜晚都是电纸书陪伴着我度过的</li>
 </ul>
-<p><img src="http://localhost:4000/post-images/1651718846286.jpg" alt="" loading="lazy"><br>
+<p><img src="https://Covatubala.github.io/post-images/1651718846286.jpg" alt="" loading="lazy"><br>
 高三暑假<br>
 有了一定的金钱和精力，根据知乎和各方面推荐选择了一些配置<br>
 由于什么都不懂，这个时候还是只认牌子不看具体细节</p>
@@ -60,8 +60,8 @@
 <li>罗技 K835 吾皇万睡</li>
 <li>罗技 G304</li>
 </ul>
-<p><img src="http://localhost:4000/post-images/1651718829835.JPG" alt="" loading="lazy"><br>
-<img src="http://localhost:4000/post-images/1651718848344.jpg" alt="" loading="lazy"><br>
+<p><img src="https://Covatubala.github.io/post-images/1651718829835.JPG" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651718848344.jpg" alt="" loading="lazy"><br>
 宿舍<br>
 深受上个阶段线路缠绕的叨扰，决定桌面无线化变革<br>
 笔记本看着不够爽，于是全套外设连接（屏幕后边那个就是笔记本<br>
@@ -72,13 +72,13 @@
 <li>Logitch M590，考虑到打原神疯狂点击鼠标影响室友，换成了静音鼠标</li>
 <li>Sony Wh-Ch510，正值秋季，担心包耳式捂得太严实，选择了压耳式（压得真的疼</li>
 </ul>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1651718850677.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://Covatubala.github.io/post-images/1651718850677.jpg" alt="" loading="lazy"></figure>
 <ul>
 <li>NB F80，总觉得这个屏幕的支架太过庞大影响桌面空间，换显示器又很不方便（懒），于是选择了显示器臂</li>
 <li>倍思屏幕挂灯，同上，台灯占地方看着就想把它去掉</li>
 <li>淘宝偶然间逛到有专门把笔记本立起来的小架子，一下子提升生活幸福感<br>
-<img src="http://localhost:4000/post-images/1651718827568.jpg" alt="" loading="lazy"><br>
-<img src="http://localhost:4000/post-images/1651718833061.jpg" alt="" loading="lazy"></li>
+<img src="https://Covatubala.github.io/post-images/1651718827568.jpg" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651718833061.jpg" alt="" loading="lazy"></li>
 </ul>
 <p>一段时间后还是换回显示器支架，无他，我根本不需要显示器臂所提供的多角度旋转悬停等功能，大繁归于大简</p>
 <ul>
@@ -86,7 +86,7 @@
 <li>苹果全家桶</li>
 <li>Ikbc c104，意识到键盘不需要拿来拿去，回归了有线</li>
 </ul>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1651718837585.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://Covatubala.github.io/post-images/1651718837585.jpg" alt="" loading="lazy"></figure>
 <ul>
 <li>小柜子</li>
 <li>巴西木，虽然早就买了但是刚刚出镜</li>
@@ -94,20 +94,20 @@
 <li>蓝猩Magsafe，磁吸充电</li>
 <li>Xerox 激光打印机</li>
 <li>Iphone x，se作为标本留存<br>
-<img src="http://localhost:4000/post-images/1651718839645.jpg" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651718839645.jpg" alt="" loading="lazy"><br>
 大一寒假<br>
 暂住在研究生宿舍，户型结构略有不同，灯管只好斜着放</li>
 <li>显示器支架，幸福感++<br>
-<img src="http://localhost:4000/post-images/1651718841919.jpg" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651718841919.jpg" alt="" loading="lazy"><br>
 大一下<br>
 上海大疫情，转移到宾馆14+7隔离，嵌在墙里的电视还可以投屏</li>
 <li>Macbook Air 2020，全家桶，Unix系统有点好用</li>
 <li>Xbox One s，震感马达好棒<br>
-<img src="http://localhost:4000/post-images/1651727811922.jpg" alt="" loading="lazy"><br>
-<img src="http://localhost:4000/post-images/1651727814921.jpg" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651727811922.jpg" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651727814921.jpg" alt="" loading="lazy"><br>
 换了另外一间宾馆隔离，这电视效果直接拉满<br>
 -罗技 G403Hero，经过一学期的无线桌面，意识到宿舍搭配不需要移动，有线是最舒服的，于是返璞归真了<br>
-<img src="http://localhost:4000/post-images/1651718924445.jpg" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1651718924445.jpg" alt="" loading="lazy"><br>
 隔离归来<br>
 也是目前的搭配，杂乱却温馨</li>
 </ul>
@@ -115,29 +115,29 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[提升幸福感的一些软件搭配]]></title>
-        <id>http://localhost:4000/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/</id>
-        <link href="http://localhost:4000/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/">
+        <id>https://Covatubala.github.io/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/</id>
+        <link href="https://Covatubala.github.io/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/">
         </link>
         <updated>2022-05-05T01:25:10.000Z</updated>
         <content type="html"><![CDATA[<ul>
 <li>
 <p>TranslucentTB+WallPaper Engine+Rocket Dock<br>
-<img src="http://localhost:4000/post-images/1651714379659.jpg" alt="" loading="lazy"></p>
+<img src="https://Covatubala.github.io/post-images/1651714379659.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>Neat Converter<br>
 格式转换器<br>
-<img src="http://localhost:4000/post-images/1651714228248.jpg" alt="" loading="lazy"></p>
+<img src="https://Covatubala.github.io/post-images/1651714228248.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>CP Editor+Codeforces Contest Helper<br>
 谁用谁知道，爽爆，要是我当时知道这个直接IOI金牌<br>
-<img src="http://localhost:4000/post-images/1651715081504.jpg" alt="" loading="lazy"></p>
+<img src="https://Covatubala.github.io/post-images/1651715081504.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>Microsoft Whiteboard<br>
 Windows自带白板，意外的好用<br>
-<img src="http://localhost:4000/post-images/1651718680325.jpg" alt="" loading="lazy"></p>
+<img src="https://Covatubala.github.io/post-images/1651718680325.jpg" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>Clash/V2ary<br>
@@ -158,8 +158,8 @@ Windows自带白板，意外的好用<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dread Hunger机制]]></title>
-        <id>http://localhost:4000/post/dread-hunger-ji-zhi/</id>
-        <link href="http://localhost:4000/post/dread-hunger-ji-zhi/">
+        <id>https://Covatubala.github.io/post/dread-hunger-ji-zhi/</id>
+        <link href="https://Covatubala.github.io/post/dread-hunger-ji-zhi/">
         </link>
         <updated>2022-05-01T07:08:32.000Z</updated>
         <content type="html"><![CDATA[<ul>
@@ -173,8 +173,8 @@ Windows自带白板，意外的好用<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[Round #782 (Div. 2)]]></title>
-        <id>http://localhost:4000/post/round-782-div-2/</id>
-        <link href="http://localhost:4000/post/round-782-div-2/">
+        <id>https://Covatubala.github.io/post/round-782-div-2/</id>
+        <link href="https://Covatubala.github.io/post/round-782-div-2/">
         </link>
         <updated>2022-04-30T02:45:55.000Z</updated>
         <content type="html"><![CDATA[<h4 id="a-red-versus-blue">A. Red Versus Blue</h4>
@@ -193,8 +193,8 @@ Windows自带白板，意外的好用<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[Round #780 (Div. 3)]]></title>
-        <id>http://localhost:4000/post/round-780-div-3/</id>
-        <link href="http://localhost:4000/post/round-780-div-3/">
+        <id>https://Covatubala.github.io/post/round-780-div-3/</id>
+        <link href="https://Covatubala.github.io/post/round-780-div-3/">
         </link>
         <updated>2022-04-30T02:44:54.000Z</updated>
         <content type="html"><![CDATA[<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">ABCDE</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span></span>都想出来了，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span></span>没来得及打完第二天补的，没有证明彻底但是做法是对的...</p>
@@ -202,8 +202,8 @@ Windows自带白板，意外的好用<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[《张居正》书评]]></title>
-        <id>http://localhost:4000/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/</id>
-        <link href="http://localhost:4000/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/">
+        <id>https://Covatubala.github.io/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/</id>
+        <link href="https://Covatubala.github.io/post/lesslesszhang-ju-zheng-greatergreater-shu-ping/">
         </link>
         <updated>2022-04-30T02:29:41.000Z</updated>
         <content type="html"><![CDATA[<p>高三课堂上便屡屡从语文老师嘴里听闻《张居正》的大名。<br>
@@ -220,8 +220,8 @@ Windows自带白板，意外的好用<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[这个博客的诞生历程]]></title>
-        <id>http://localhost:4000/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/</id>
-        <link href="http://localhost:4000/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/">
+        <id>https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/</id>
+        <link href="https://Covatubala.github.io/post/li-yong-gridea-yi-ji-github-da-jian-ge-ren-bo-ke/">
         </link>
         <updated>2022-04-29T06:06:16.000Z</updated>
         <content type="html"><![CDATA[<p>2022年4月末的某一天，上海疫情已两月不止，囿于宿舍的我又一次无可奈何地打开高等数学准备写作业，脑海中突然闪出一道光芒，指引着我打开了<a href="https://www.cnblogs.com/hzoier/">Antileaf曾经的博客</a>，紧紧跟随他在博客中的指示打开了他<a href="https://antileafqwq.fun">最新的网站</a>，被他精美的博客设计以及插图震撼，也随之想起了之前自己反复思考却未下定决心实施的想法——我想有一个完全自主的，不受他人控制的博客，不需要有很多人来欣赏，更多的是我想做到随意输出。<br>
