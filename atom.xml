@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:4000</id>
+    <title>Covatubala的小木屋</title>
+    <updated>2022-07-28T11:23:31.053Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <subtitle>若是心向明月，纵然不慎受挫也会失落在星辰之间。
+
+
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=239 src=&quot;//music.163.com/outchain/player?type=0&amp;id=402328846&amp;auto=0&amp;height=430&quot;&gt;&lt;/iframe&gt;</subtitle>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
+    <rights>All rights reserved 2022, Covatubala的小木屋</rights>
+    <entry>
+        <title type="html"><![CDATA[Control和Command区别]]></title>
+        <id>http://localhost:4000/post/macbook-li-control-he-command-zuo-yong-qu-bie/</id>
+        <link href="http://localhost:4000/post/macbook-li-control-he-command-zuo-yong-qu-bie/">
+        </link>
+        <updated>2022-07-28T11:06:36.000Z</updated>
+        <content type="html"><![CDATA[<p>作者：阿斌<br>
+链接：https://www.zhihu.com/question/19814844/answer/31471905<br>
+来源：知乎<br>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>看了上面的一些答案，Control难道只是作为辅助右键存在的吗？<br>
+早年的Unix系统的键盘是没有Windows键、Command键（参考HHKB布局）这些修饰键的只有Control、Alt（Opt）、Shift这些修饰键。<br>
+Control在命令行（Shell、EMACS等）下是有特定的的快捷键的，OSX作为Unix系统，将这些快捷键在GUI系统中也保留了下来：Control+A（行首）、Control+E（行尾）、Control+B（方向左）、Control+F（方向右）、Control+P（方向上）、Control+N（方向下）、Control+D（向后删除，可理解为Windows上的Delete）、Control+H（向前删除，可理解为Backspace）、Control+K（可理解为剪切）、Control+Y（可理解为黏贴）同时，作为GUI系统，Mac OS也要有相应的快捷键，于是Command被引入，在GUI中，相应的有了新的快捷键组合：Command+A、Command+B、Command+C……<br>
+可以简单的认为，Command是和图形界面相关的快捷键，Control多与命令行界面相关。<br>
+从新的修饰键引入这个角度上讲，Command的引入，要比Windows上的Win键严谨、有效的多。<br>
+1、一些快捷键在GUI下和命令行下的意义冲突，例如Control+C；<br>
+2、Windows键引入，带来的快捷键非常少，在Windows7之前的操作系统中，只有Win+D，Win+M以及单独按Win键激活开始菜单等相当少得几个，几乎可有可无，直到Win7开始才有所改善（WIn+Space、Win+方向、Win+数字、Win+Tab、Win+X、Win+B)。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大一暑假总结]]></title>
+        <id>http://localhost:4000/post/da-yi-shu-jia-ji-lu/</id>
+        <link href="http://localhost:4000/post/da-yi-shu-jia-ji-lu/">
+        </link>
+        <updated>2022-07-28T10:36:13.000Z</updated>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>地点</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.23——5.30</td>
+<td>「郑州」格林豪泰</td>
+<td>集中隔离</td>
+</tr>
+<tr>
+<td>5.31——6.7</td>
+<td>「郑州」万达商场</td>
+<td>居家隔离，实际❌</td>
+</tr>
+<tr>
+<td>6.8——6.12</td>
+<td>「南阳」物业大平层</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tmp]]></title>
+        <id>http://localhost:4000/post/tmp/</id>
+        <link href="http://localhost:4000/post/tmp/">
+        </link>
+        <updated>2022-07-27T12:55:16.000Z</updated>
+        <content type="html"><![CDATA[<p>#include&lt;bits/stdc++.h&gt;<br>
+using namespace std;<br>
+int main(){<br>
+cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;<br>
+return 0;<br>
+}</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[成都四日游]]></title>
+        <id>http://localhost:4000/post/cheng-du-si-ri-you-zhi-nan/</id>
+        <link href="http://localhost:4000/post/cheng-du-si-ri-you-zhi-nan/">
+        </link>
+        <updated>2022-07-25T03:54:01.000Z</updated>
+        <content type="html"><![CDATA[<p>DAY 1 中午抵达<br>
+国金中心 七楼平台标志性建筑物<br>
+太古里先忽略 大白天实在太热<br>
+下楼从春熙路站坐地铁到人民公园站 去公园里的鹤鸣茶馆感受下成都节奏<br>
+点一杯茶 嗑瓜子 打打牌 来的时候路边买点小吃<br>
+——太阳下山之后<br>
+步行十分钟到达宽窄巷子（不要消费）<br>
+出来之后去奎星楼街吃饭 步行导航十分钟<br>
+吃完饭就可以去太古里 公交地铁打车都可以 感受街拍氛围 靓仔<br>
+步行二十分钟去九眼桥逛一逛 爱心斑马线离这里很近 在天仙桥南路</p>
+<p>DAY 2 熊猫基地 有直通车 绿色印熊猫的大巴车<br>
+观光车坐到最里面从里往外逛 2h 出来坐接驳车 2r去地铁站<br>
+坐地铁直接去建设路小吃街吃饭<br>
+吃完饭去东郊记忆 接下来去杜甫草堂50r 接下来去武侯祠（5点后停止入场<br>
+晚上到春熙路 旁边有一条街 全是饭馆子（舌尖派对）</p>
+<p>DAY 3 带上小零食坐高铁去青城山 坐观光车 （35r）<br>
+中午吃点小零食垫垫肚子 然后直接打车去都江堰<br>
+这边有个灌县小吃城可以吃饭（赵卖面）<br>
+回去的时候坐高铁去成都就好（罗二火锅）看到那种全是本地人吃 直接吃<br>
+八点之后去锦里 八点之前不开灯 看夜景 （不要消费）看完做个24h核酸 （省人民医院）</p>
+<p>【339的酒吧一条街】<br>
+在成都吃饭 任何时候都要给自己的肚子留有一丝余地<br>
+“建设路”“锦里”“宽窄巷子”景点美食街卖着全国千篇一律的东西 没特色不要去 吃美食去“奎星楼街”和“吉祥街”  “玉林路街区”好几家老店和必吃榜点都在这里</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一些文章]]></title>
+        <id>http://localhost:4000/post/yi-xie-wen-zhang/</id>
+        <link href="http://localhost:4000/post/yi-xie-wen-zhang/">
+        </link>
+        <updated>2022-07-21T08:47:41.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/42093000">C++11 新特性</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[同余最短路]]></title>
+        <id>http://localhost:4000/post/tong-yu-zui-duan-lu/</id>
+        <link href="http://localhost:4000/post/tong-yu-zui-duan-lu/">
+        </link>
+        <updated>2022-05-05T08:12:39.000Z</updated>
+        <content type="html"><![CDATA[<p>（室友不会，我发现我也不会。<br>
+算法描述&amp;解决<br>
+选择最小的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>作为base，把其他的a表示成<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mi mathvariant="normal">∗</mi><mi>p</mi><mo>+</mo><mi>l</mi><mi>e</mi><mi>f</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">base∗p+left</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mord">∗</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">t</span></span></span></span>的形式。定义<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">f[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span>代表凑出模base余i的数最小需要多少base。而一个数p能被凑出当且仅当<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>[</mo><mi>p</mi><mi mathvariant="normal">%</mi><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mo>]</mo><mo>&lt;</mo><mo>=</mo><mi>p</mi><mi mathvariant="normal">/</mi><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">f[p\% base]&lt;=p/base</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">[</span><span class="mord mathdefault">p</span><span class="mord">%</span><span class="mord mathdefault">b</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">p</span><span class="mord">/</span><span class="mord mathdefault">b</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">e</span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span>数组最短路转移即可得到。<br>
+一般用来解决的问题：<br>
+给定m个整数，求这m个整数能拼凑出多少其他整数.<br>
+或给定m个整数，求这m个整数不能拼凑出的最小（或最大）的整数.<br>
+即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">\sum\limits_{i=1}^na_ix_i=k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.329066em;vertical-align:-0.9776689999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513970000000004em;"><span style="top:-2.122331em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0000050000000003em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op">∑</span></span></span><span style="top:-3.950005em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9776689999999999em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[桌搭升级之路]]></title>
+        <id>http://localhost:4000/post/zhuo-da-sheng-ji-zhi-lu/</id>
+        <link href="http://localhost:4000/post/zhuo-da-sheng-ji-zhi-lu/">
+        </link>
+        <updated>2022-05-05T02:02:03.000Z</updated>
+        <content type="html"><![CDATA[<p>如果你看到我最近又开始吃盒饭，那可能是添置了新的外设。</p>
+<!-- 所以这到底有啥用 -->
+<!-- 下边是摘要分隔符 -->
+<p><img src="http://localhost:4000/post-images/1651718844156.JPG" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1651718921273.jpg" alt="" loading="lazy"><br>
+高二升高三暑假<br>
+没有精力和财力去捯饬</p>
+<ul>
+<li>破旧插排</li>
+<li>一千多买的垃圾<strong>海尔</strong>电脑，编译一个程序需要20s</li>
+<li>19.9买的Dell鼠标，能用</li>
+<li>小型加湿器，用以抵抗北方干燥的环境</li>
+</ul>
+<p><img src="http://localhost:4000/post-images/1651718917243.jpg" alt="" loading="lazy"><br>
+高三寒假<br>
+因为疫情不能回家过年，借住在同学租的泰华学府，没有独立经济能力，攒了很久，有了1500左右</p>
+<ul>
+<li>C-FORCE便捷显示屏，用来和我的P30连接，磨砂质感，效果很好，而且能外接显示屏和手机双开，比如显示屏里投屏腾讯会议，手机里打着王者荣耀</li>
+<li>JDread，陪伴了我寒假和整个高三下学期，无数个夜晚都是电纸书陪伴着我度过的</li>
+</ul>
+<p><img src="http://localhost:4000/post-images/1651718846286.jpg" alt="" loading="lazy"><br>
+高三暑假<br>
+有了一定的金钱和精力，根据知乎和各方面推荐选择了一些配置<br>
+由于什么都不懂，这个时候还是只认牌子不看具体细节</p>
+<ul>
+<li>联想拯救者 R7000p</li>
+<li>罗技 K835 吾皇万睡</li>
+<li>罗技 G304</li>
+</ul>
+<p><img src="http://localhost:4000/post-images/1651718829835.JPG" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1651718848344.jpg" alt="" loading="lazy"><br>
+宿舍<br>
+深受上个阶段线路缠绕的叨扰，决定桌面无线化变革<br>
+笔记本看着不够爽，于是全套外设连接（屏幕后边那个就是笔记本<br>
+有过无数次卖掉游戏本，换成台式机+轻薄本的想法</p>
+<ul>
+<li>AOC CQ27G1，27寸2k144Hz无可挑剔</li>
+<li>Keychron K6</li>
+<li>Logitch M590，考虑到打原神疯狂点击鼠标影响室友，换成了静音鼠标</li>
+<li>Sony Wh-Ch510，正值秋季，担心包耳式捂得太严实，选择了压耳式（压得真的疼</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1651718850677.jpg" alt="" loading="lazy"></figure>
+<ul>
+<li>NB F80，总觉得这个屏幕的支架太过庞大影响桌面空间，换显示器又很不方便（懒），于是选择了显示器臂</li>
+<li>倍思屏幕挂灯，同上，台灯占地方看着就想把它去掉</li>
+<li>淘宝偶然间逛到有专门把笔记本立起来的小架子，一下子提升生活幸福感<br>
+<img src="http://localhost:4000/post-images/1651718827568.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1651718833061.jpg" alt="" loading="lazy"></li>
+</ul>
+<p>一段时间后还是换回显示器支架，无他，我根本不需要显示器臂所提供的多角度旋转悬停等功能，大繁归于大简</p>
+<ul>
+<li>JBL Flip4</li>
+<li>苹果全家桶</li>
+<li>Ikbc c104，意识到键盘不需要拿来拿去，回归了有线</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1651718837585.jpg" alt="" loading="lazy"></figure>
+<ul>
+<li>小柜子</li>
+<li>巴西木，虽然早就买了但是刚刚出镜</li>
+<li>JDread变成了Kindle Oasis2，不喜欢，换成了最终版——Kindle Voyage，手感灵润，虚拟按压键舒适无比</li>
+<li>蓝猩Magsafe，磁吸充电</li>
+<li>Xerox 激光打印机</li>
+<li>Iphone x，se作为标本留存<br>
+<img src="http://localhost:4000/post-images/1651718839645.jpg" alt="" loading="lazy"><br>
+大一寒假<br>
+暂住在研究生宿舍，户型结构略有不同，灯管只好斜着放</li>
+<li>显示器支架，幸福感++<br>
+<img src="http://localhost:4000/post-images/1651718841919.jpg" alt="" loading="lazy"><br>
+大一下<br>
+上海大疫情，转移到宾馆14+7隔离，嵌在墙里的电视还可以投屏</li>
+<li>Macbook Air 2020，全家桶，Unix系统有点好用</li>
+<li>Xbox One s，震感马达好棒<br>
+<img src="http://localhost:4000/post-images/1651727811922.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1651727814921.jpg" alt="" loading="lazy"><br>
+换了另外一间宾馆隔离，这电视效果直接拉满<br>
+-罗技 G403Hero，经过一学期的无线桌面，意识到宿舍搭配不需要移动，有线是最舒服的，于是返璞归真了<br>
+<img src="http://localhost:4000/post-images/1651718924445.jpg" alt="" loading="lazy"><br>
+隔离归来<br>
+也是目前的搭配，杂乱却温馨</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[提升幸福感的一些软件搭配]]></title>
+        <id>http://localhost:4000/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/</id>
+        <link href="http://localhost:4000/post/ti-sheng-xing-fu-gan-de-yi-xie-ruan-jian/">
+        </link>
+        <updated>2022-05-05T01:25:10.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>TranslucentTB+WallPaper Engine+Rocket Dock<br>
+<img src="http://localhost:4000/post-images/1651714379659.jpg" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>Neat Converter<br>
+格式转换器<br>
+<img src="http://localhost:4000/post-images/1651714228248.jpg" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>CP Editor+Codeforces Contest Helper<br>
+谁用谁知道，爽爆，要是我当时知道这个直接IOI金牌<br>
+<img src="http://localhost:4000/post-images/1651715081504.jpg" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>Microsoft Whiteboard<br>
+Windows自带白板，意外的好用<br>
+<img src="http://localhost:4000/post-images/1651718680325.jpg" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>Clash/V2ary<br>
+梯子</p>
+</li>
+<li>
+<p>Steam Tools<br>
+白嫖专用</p>
+</li>
+<li>
+<p>Everything</p>
+</li>
+<li>
+<p>Bypass抢票</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dread Hunger机制]]></title>
+        <id>http://localhost:4000/post/dread-hunger-ji-zhi/</id>
+        <link href="http://localhost:4000/post/dread-hunger-ji-zhi/">
+        </link>
+        <updated>2022-05-01T07:08:32.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>开局页面按p可跳过</li>
+<li>枪手，导航，牧师不建议转生<br>
+<strong>峰顶</strong></li>
+<li>引中熊可破冰，引到废船可卡门杀</li>
+<li>上山栅栏可卡狼，无伤杀狼群</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Round #782 (Div. 2)]]></title>
+        <id>http://localhost:4000/post/round-782-div-2/</id>
+        <link href="http://localhost:4000/post/round-782-div-2/">
+        </link>
+        <updated>2022-04-30T02:45:55.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="a-red-versus-blue">A. Red Versus Blue</h4>
+<p>给定r个'R'和b个'B'，输出一个序列满足连续字母数量最少。<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>≤</mo><mi>b</mi><mo>≤</mo><mi>r</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">1\le b\le r\le 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83041em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span></p>
+<h4 id="b-bit-flipping">B. Bit Flipping</h4>
+<p>给定一个长度为n的01序列，你可以进行k次操作，每次将除某一位数字外其他数字翻转，输出字典序最大的最终序列以及对每一位的操作数。<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>≤</mo><mn>1</mn><mi>e</mi><mn>5</mn><mo separator="true">,</mo><mi>k</mi><mo>≤</mo><mn>1</mn><mi>e</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">n\le 1e5,k\le 1e9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">9</span></span></span></span></p>
+<h4 id="c-line-empire">C. Line Empire</h4>
+<p>给定一个坐标轴，你最初在原点，有n个整数点，每次转移到一个攻打下来的点花费<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>∗</mo><mi>d</mi><mi>i</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">a*dis</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span></span></span></span>，攻打一个点花费<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mo>∗</mo><mi>d</mi><mi>i</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">b*dis</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span></span></span></span>，你和被攻打的点之间必须全被攻打下来过。求攻打下来所有点的最小花费。<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>n</mi><mo>≤</mo><mn>1</mn><mi>e</mi><mn>5</mn><mo separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><mn>1</mn><mi>e</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">a,b,n\le 1e5,x_n\le 1e8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">8</span></span></span></span></p>
+<h4 id="d-reverse-sort-sum">D. Reverse Sort Sum</h4>
+<p>对于一个长度为n的01串，定义<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>k</mi><mo separator="true">,</mo><mi>A</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(k,A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">A</span><span class="mclose">)</span></span></span></span>为将A的前k个排序，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mn>4</mn><mo separator="true">,</mo><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo>]</mo><mo>)</mo><mo>=</mo><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">f(4,[0,1,1,0,0,1,0])=[0,0,1,1,0,1,0]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mclose">]</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mclose">]</span></span></span></span> ，设<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>B</mi><mi>i</mi></msub><mo>=</mo><mi>f</mi><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>A</mi><mo>)</mo><mo separator="true">,</mo><mi>C</mi><mo>=</mo><msub><mo>∑</mo><mi>i</mi></msub><msub><mi>B</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">B_i=f(i,A),C=\sum\limits _i B_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.727674em;vertical-align:-0.977669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.750005em;"><span style="top:-2.122331em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span><span style="top:-3.0000050000000003em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.977669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，则给定一个C，求出它的A串<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>≤</mo><mn>2</mn><mi>e</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">n\le 2e5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord mathdefault">e</span><span class="mord">5</span></span></span></span></p>
+]]></content>
+    </entry>
+</feed>
