@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>From Nand to Tetris学习笔记 | Covatubala的小木屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1668564658452">
+<link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="Week1
+Theoerm
+• (x AND (y OR z)) = (x AND y) OR (× AND z)
+• (× OR (y AND z)) = (x OR y) AND (x OR z)
+• NOT(x AND y) = NO..." />
+    <meta name="keywords" content="学习笔记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Covatubala.github.io">
+        <img src="https://Covatubala.github.io/images/avatar.png?v=1668564658452" class="site-logo">
+        <h1 class="site-title">Covatubala的小木屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Covatubala" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/ren-zi-hang-23" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      若是心向明月，纵然不慎受挫也会失落在星辰之间。<br/>
+
+
+    </div>
+    <div class="site-footer">
+      <span id="runtime_span"></span>
+<script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
+Date("05/27/2021 00:00:00");Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);runtime_span.innerHTML="本站已稳定运行："+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><br>
+<span id="busuanzi_container_site_pv">&nbsp&nbsp&nbsp本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">From Nand to Tetris学习笔记</h2>
+            <div class="post-date">2022-08-10</div>
+            
+              <div class="feature-container" style="background-image: url('https://courses.javacodegeeks.com/wp-content/uploads/2020/02/COURSE_IMAGE-2048x1138.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="week1">Week1</h1>
+<h2 id="theoerm">Theoerm</h2>
+<p>• (x AND (y OR z)) = (x AND y) OR (× AND z)<br>
+• (× OR (y AND z)) = (x OR y) AND (x OR z)<br>
+• NOT(x AND y) = NOT(x) OR NOT(y)<br>
+• NOT(x OR y) = NOT(x) AND NOT(y)</p>
+<h2 id="hdl-survival-guide">Hdl Survival Guide</h2>
+<p>Add16(a= ,b= ,out= );<br>
+ALU(x= ,y= ,zx= ,nx= ,zy= ,ny= ,f= ,no= ,out= ,zr= ,ng= ); And16(a= ,b= ,out= );<br>
+And(a= ,b= ,out= );<br>
+ARegister(in= ,load= ,out= );<br>
+Bit(in= ,load= ,out= );<br>
+CPU(inM= ,instruction= ,reset= ,outM= ,writeM= ,addressM= ,pc= ); DFF(in= ,out= );<br>
+DMux4Way(in= ,sel= ,a= ,b= ,c= ,d= );<br>
+DMux8Way(in= ,sel= ,a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= );<br>
+DMux(in= ,sel= ,a= ,b= );<br>
+DRegister(in= ,load= ,out= );<br>
+FullAdder(a= ,b= ,c= ,sum= ,carry= );<br>
+HalfAdder(a= ,b= ,sum= , carry= );<br>
+Inc16(in= ,out= );<br>
+Keyboard(out= );<br>
+Memory(in= ,load= ,address= ,out= );<br>
+Mux16(a= ,b= ,sel= ,out= );<br>
+Mux4Way16(a= ,b= ,c= ,d= ,sel= ,out= );<br>
+Mux8Way16(a= ,b= ,c= ,d= ,e= ,f= ,g= ,h= ,sel= ,out= );<br>
+Mux(a= ,b= ,sel= ,out= );<br>
+Nand(a= ,b= ,out= );<br>
+Not16(in= ,out= );<br>
+Not(in= ,out= );<br>
+Or16(a= ,b= ,out= );<br>
+Or8Way(in= ,out= );<br>
+Or(a= ,b= ,out= );<br>
+PC(in= ,load= ,inc= ,reset= ,out= );<br>
+RAM16K(in= ,load= ,address= ,out= );<br>
+RAM4K(in= ,load= ,address= ,out= );<br>
+RAM512(in= ,load= ,address= ,out= );<br>
+RAM64(in= ,load= ,address= ,out= );<br>
+RAM8(in= ,load= ,address= ,out= );<br>
+Register(in= ,load= ,out= );<br>
+ROM32K(address= ,out= );<br>
+Screen(in= ,load= ,address= ,out= );<br>
+Xor(a= ,b= ,out= );</p>
+<h1 id="week2">Week2</h1>
+<h2 id="冯诺伊曼结构">冯·诺伊曼结构</h2>
+<figure data-type="image" tabindex="1"><img src="https://Covatubala.github.io/post-images/1660270330617.png" alt="" loading="lazy"></figure>
+<h2 id="alu">ALU</h2>
+<h1 id="week3">Week3</h1>
+<h2 id="寄存器">寄存器</h2>
+<p><img src="https://Covatubala.github.io/post-images/1660375390478.png" alt="" loading="lazy"><br>
+<img src="https://Covatubala.github.io/post-images/1660375637143.png" alt="" loading="lazy"></p>
+<h2 id="ram">RAM</h2>
+<p>RAM &quot;Random Access Memory&quot;</p>
+<h2 id="rom">ROM</h2>
+<p>ROM &quot;Read Only Memory&quot;</p>
+<h2 id="flash">FLASH</h2>
+<p>FLASH == RAM + ROM</p>
+<h2 id="cache-memory">Cache Memory</h2>
+<h1 id="week4">Week4</h1>
+<h2 id="hack-computer-hardware">Hack computer: hardware</h2>
+<figure data-type="image" tabindex="2"><img src="https://Covatubala.github.io/post-images/1661047184152.png" alt="" loading="lazy"></figure>
+<h2 id="the-c-instruction-symbolic-and-binary-syntax">The C-instruction: symbolic and binary syntax</h2>
+<figure data-type="image" tabindex="3"><img src="https://Covatubala.github.io/post-images/1660444127994.png" alt="" loading="lazy"></figure>
+<h2 id="the-hack-character-set">The Hack character set</h2>
+<figure data-type="image" tabindex="4"><img src="https://Covatubala.github.io/post-images/1660466228347.png" alt="" loading="lazy"></figure>
+<h2 id="hack-assembly-instructions">Hack assembly instructions</h2>
+<figure data-type="image" tabindex="5"><img src="https://Covatubala.github.io/post-images/1660695160784.png" alt="" loading="lazy"></figure>
+<h1 id="week5">Week5</h1>
+<h2 id="the-overall-computer-architecture">The Overall Computer architecture</h2>
+<figure data-type="image" tabindex="6"><img src="https://Covatubala.github.io/post-images/1661255435489.png" alt="" loading="lazy"></figure>
+<h2 id="hack-cpu-interface">Hack CPU Interface</h2>
+<figure data-type="image" tabindex="7"><img src="https://Covatubala.github.io/post-images/1661250108345.png" alt="" loading="lazy"></figure>
+<h2 id="hack-cpu-implementation">Hack CPU Implementation</h2>
+<figure data-type="image" tabindex="8"><img src="https://Covatubala.github.io/post-images/1661067488900.png" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://Covatubala.github.io/tag/wX2Kq5ZK7/" class="tag">
+                    学习笔记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Covatubala.github.io/post/zshrc-pei-zhi/">
+                  <h3 class="post-title">
+                    zshrc配置
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dced8d18bb3ce4622a5e',
+        clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
+        repo: 'covatubala.github.io',
+        owner: 'Covatubala',
+        admin: ['Covatubala'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

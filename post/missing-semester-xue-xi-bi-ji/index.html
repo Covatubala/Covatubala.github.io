@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>The Missing Semester of Your CS Education学习笔记 | Covatubala的小木屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1668564658452">
+<link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="计算机教育中缺失的一课
+1/13: 课程概览与 shell
+命令行语句
+
+
+
+
+
+
+
+
+
+pwd
+输出当前位置
+
+
+cd .
+到当前目录
+
+
+cd ..
+上一级目录
+
+
+cd /cd ~
+回到家目录
+
+
+cd -
+回到跳转前的目录
+
+
+ls..." />
+    <meta name="keywords" content="学习笔记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Covatubala.github.io">
+        <img src="https://Covatubala.github.io/images/avatar.png?v=1668564658452" class="site-logo">
+        <h1 class="site-title">Covatubala的小木屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Covatubala" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/ren-zi-hang-23" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      若是心向明月，纵然不慎受挫也会失落在星辰之间。<br/>
+
+
+    </div>
+    <div class="site-footer">
+      <span id="runtime_span"></span>
+<script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
+Date("05/27/2021 00:00:00");Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);runtime_span.innerHTML="本站已稳定运行："+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><br>
+<span id="busuanzi_container_site_pv">&nbsp&nbsp&nbsp本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">The Missing Semester of Your CS Education学习笔记</h2>
+            <div class="post-date">2022-08-01</div>
+            
+              <div class="feature-container" style="background-image: url('https://tva3.sinaimg.cn/large/0072Vf1pgy1foxk3yu6vwj31kw0w04k5.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p><a href="https://missing-semester-cn.github.io">计算机教育中缺失的一课</a></p>
+<h1 id="113-课程概览与-shell">1/13: 课程概览与 shell</h1>
+<h2 id="命令行语句">命令行语句</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pwd</td>
+<td>输出当前位置</td>
+</tr>
+<tr>
+<td>cd .</td>
+<td>到当前目录</td>
+</tr>
+<tr>
+<td>cd ..</td>
+<td>上一级目录</td>
+</tr>
+<tr>
+<td>cd /cd ~</td>
+<td>回到家目录</td>
+</tr>
+<tr>
+<td>cd -</td>
+<td>回到跳转前的目录</td>
+</tr>
+<tr>
+<td>ls -l</td>
+<td>列出当前目录下子文件的详细信息</td>
+</tr>
+<tr>
+<td>ls -a</td>
+<td>列出所有文件包含隐藏文件</td>
+</tr>
+<tr>
+<td>* ?</td>
+<td>代替一个字符串 一个字符</td>
+</tr>
+<tr>
+<td>mv A B</td>
+<td>重命名并可以移动文件</td>
+</tr>
+<tr>
+<td>cp A B</td>
+<td>复制并可以移动文件</td>
+</tr>
+<tr>
+<td>control L</td>
+<td>清除终端</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>打印文件内容到终端上</td>
+</tr>
+<tr>
+<td>touch</td>
+<td>建立新文件</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>不覆盖而是叠加</td>
+</tr>
+<tr>
+<td>A | B</td>
+<td>A的输出作为B的输入</td>
+</tr>
+<tr>
+<td>grep  A B</td>
+<td>在A里查找B</td>
+</tr>
+<tr>
+<td>man,rm,mkdir,rmdir</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="杂七杂八">杂七杂八</h2>
+<ul>
+<li>修改计算机名称（设备名称）为美少女小柳婼的MacBookPro15：<br>
+<code>sudo scutil —set ComputerName 美少女小柳婼的MacBookPro15</code></li>
+<li>修改主机名（终端前面的名字）为liuchuo：<br>
+<code>sudo scutil —set HostName liuchuo</code></li>
+<li>--后边的内容会被当作普通文件而不是参数</li>
+<li>markdown编辑表格时输入|用<code>&amp;#124;</code>代替</li>
+</ul>
+<h1 id="114-shell-工具和脚本">1/14: Shell 工具和脚本</h1>
+<h2 id="参数含义">$参数含义</h2>
+<p>在编写 Linux bash shell 脚本时，经常会用到 <code>$0、$1、$2、$#、$@、$*、$? </code>等参数，下面具体说明这些参数的含义。</p>
+<p>假设执行 ./test.sh a b c 这样一个命令，则可以使用下面的参数来获取一些值：</p>
+<pre><code>$0 对应 &quot;./test.sh&quot; 这个值。如果执行的是 ./work/test.sh， 则对应 ./work/test.sh 这个值，而不是只返回文件名本身的部分。
+$1 会获取到 a，即 $1 对应传给脚本的第一个参数。
+$2 会获取到 b，即 $2 对应传给脚本的第二个参数。
+$3 会获取到 c，即 $3 对应传给脚本的第三个参数。$4,$5等参数的含义依此类推。
+$# 会获取到 3，对应传入脚本的参数个数，统计的参数不包括 $0 。
+$@ 会获取到 &quot;a&quot; &quot;b&quot; &quot;c&quot;，也就是所有参数的列表，不包括 $0 。
+$* 也会获取到 &quot;a&quot; &quot;b&quot; &quot;c&quot;， 其值和 $@ 相同。但 &quot;$*&quot; 和 &quot;$@&quot; 有所不同。&quot;$*&quot; 把所有参数合并成一个字符串，而 &quot;$@&quot; 会得到一个字符串参数数组。
+$? 可以获取到执行 ./test.sh a b c 命令后的返回值。在执行一个前台命令后，可以立即用 $? 获取到该命令的返回值。该命令可以是系统自身的命令，可以是 shell 脚本，也可以是自定义的 bash 函数。
+当执行系统自身的命令时，$? 对应这个命令的返回值。
+当执行 shell 脚本时，$? 对应该脚本调用 exit 命令返回的值。如果没有主动调用 exit 命令，默认返回为 0。
+当执行自定义的 bash 函数时，$? 对应该函数调用 return 命令返回的值。如果没有主动调用 return 命令，默认返回为 0。
+</code></pre>
+<p>下面举例说明 &quot;<code>$*</code>&quot; 和 &quot;<code>$@</code>&quot; 的差异。假设有一个 testparams.sh 脚本，内容如下：</p>
+<pre><code class="language-sh">#!/bin/bash
+
+for arg in &quot;$*&quot;; do
+    echo &quot;****:&quot; $arg
+done
+echo --------------
+for arg in &quot;$@&quot;; do
+    echo &quot;@@@@:&quot; $arg
+done
+</code></pre>
+<p>这个脚本分别遍历 &quot;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∗</mo><mi mathvariant="normal">&quot;</mi><mi mathvariant="normal">和</mi><mi mathvariant="normal">&quot;</mi></mrow><annotation encoding="application/x-tex">*&quot; 和 &quot;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">∗</span><span class="mord">&quot;</span><span class="mord cjk_fallback">和</span><span class="mord">&quot;</span></span></span></span>@&quot; 扩展后的内容，并打印出来。执行 ./testparams.sh，结果如下：</p>
+<pre><code>$ ./testparams.sh This is a test
+****: This is a test
+--------------
+@@@@: This
+@@@@: is
+@@@@: a
+@@@@: test
+可以看到，&quot;$*&quot; 只产生一个字符串，for 循环只遍历一次。
+而 &quot;$@&quot; 产生了多个字符串，for 循环遍历多次，是一个字符串参数数组。
+</code></pre>
+<p>注意：如果传入的参数多于 9 个，则不能使用 $10 来引用第 10 个参数，而是要用 ${10} 来引用。即，需要用大括号{}把大于 9 的数字括起来。</p>
+<h2 id="bash中-21-的解释">bash中 2&gt;&amp;1 &amp; 的解释</h2>
+<ol>
+<li>首先，bash中0，1，2三个数字分别代表STDIN_FILENO、STDOUT_FILENO、STDERR_FILENO，即标准输入（一般是键盘），标准输出（一般是显示屏，准确的说是用户终端控制台），标准错误（出错信息输出）。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标准输入</td>
+<td>标准输出</td>
+<td>标准错误</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li>
+<p>输入输出可以重定向，所谓重定向输入就是在命令中指定具体的输入来源，譬如 cat &lt; test.c 将test.c重定向为cat命令的输入源。<br>
+输出重定向是指定具体的输出目标以替换默认的标准输出，譬如ls &gt; 1.txt将ls的结果从标准输出重定向为1.txt文本。有时候会看到如 ls &gt;&gt; 1.txt这类的写法。 &gt; 和 &gt;&gt; 的区别在于：&gt; 用于新建而&gt;&gt;用于追加。</p>
+</li>
+<li>
+<p>到了此时，你应该也能猜到2&gt;&amp;1&amp;的用意了。不错，2&gt;&amp;1就是用来将标准错误2重定向到标准输出1中的。此处1前面的&amp;就是为了让bash将1解释成标准输出而不是文件1。至于最后一个&amp;，则是让bash在后台执行。</p>
+</li>
+</ol>
+<p><strong>标准错误重定向到标准输出并且在后台执行。</strong></p>
+<h2 id="利用脚本解决现实问题">利用脚本解决现实问题</h2>
+<p>我的Gridea自从升级到最新版本就不再需要Github Desktop每次的push origin了，只需要在OneDrive文件夹内直接git bash就好，虽然简单了一丢丢（其实都没啥麻烦的），然而还是需要每次都手动上传，因此我打算利用shell制作一个每天定时运行的脚本，来自动上传我每天更新好的笔记。<br>
+<em>2022年 8月 1日 星期一 08时59分38秒 CST</em><br>
+血与泪的教训，命令行里手不要太快呜呜呜，刚写的bash不小心就rm掉了还不可逆～</p>
+<pre><code class="language-sh">#!/bin/bash
+update(){
+    cd &quot;/Users/cova/OneDrive/Gridea/output&quot;
+    git checkout --orphan latest_branch
+    git add -A
+    git commit -am &quot;Update&quot;
+    git branch -D master
+    git branch -m master
+    git push -f origin master
+    cd $HOME
+    echo $(DATE) &gt;&gt; update.txt
+}
+</code></pre>
+<p>这是update.sh的代码，除此之外为了实现定时自动上传，还需要crontab辅助<br>
+<a href="http://t.zoukankan.com/EasonJim-p-7819635.html">crontab相关1</a><br>
+<a href="https://blog.csdn.net/datastructure18/article/details/121573809">crontab相关2</a></p>
+<h1 id="115-编辑器-vim">1/15: 编辑器 (Vim)</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>w</td>
+<td>向右移动一个词头</td>
+</tr>
+<tr>
+<td>b</td>
+<td>向左移动一个词头</td>
+</tr>
+<tr>
+<td>e</td>
+<td>向右移动一个词末</td>
+</tr>
+<tr>
+<td>0</td>
+<td>移动到行首</td>
+</tr>
+<tr>
+<td>$</td>
+<td>移动到行末</td>
+</tr>
+<tr>
+<td>Ctrl u</td>
+<td>滚动上升</td>
+</tr>
+<tr>
+<td>Ctrl d</td>
+<td>滚动下降</td>
+</tr>
+<tr>
+<td>G</td>
+<td>到最下方</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>到最上方</td>
+</tr>
+<tr>
+<td>L M H</td>
+<td>光标移到屏幕最下方行 中间行 最上方行</td>
+</tr>
+<tr>
+<td>fb</td>
+<td>找到光标行第一个b</td>
+</tr>
+<tr>
+<td>x</td>
+<td>delete</td>
+</tr>
+<tr>
+<td>rb</td>
+<td>delete并replace成b</td>
+</tr>
+<tr>
+<td>Ctrl r</td>
+<td>反撤回</td>
+</tr>
+<tr>
+<td>y</td>
+<td>复制</td>
+</tr>
+<tr>
+<td>:/a</td>
+<td>搜索a，按n下一个</td>
+</tr>
+<tr>
+<td>o</td>
+<td>在当前行下开一行进入insert模式</td>
+</tr>
+<tr>
+<td>&gt;&gt; &lt;&lt; ==</td>
+<td>增加一级 减少一级 取消全部  缩进</td>
+</tr>
+<tr>
+<td>a</td>
+<td>在光标之后添加</td>
+</tr>
+</tbody>
+</table>
+<h1 id="116-数据整理">1/16: 数据整理</h1>
+<h2 id="正则表达式">正则表达式</h2>
+<p>正则表达式非常常见也非常有用。<br>
+让我们从这一句正则表达式开始学习： /.*Disconnected from /。<br>
+正则表达式通常以（尽管并不总是） /开始和结束。<br>
+大多数的 ASCII 字符都表示它们本来的含义，但是有一些字符确实具有表示匹配行为的“特殊”含义。<br>
+不同字符所表示的含义，根据正则表达式的实现方式不同，也会有所变化，这一点确实令人沮丧。<br>
+常见的模式有：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>除换行符之外的”任意单个字符”</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前面字符零次或多次</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面字符一次或多次</td>
+</tr>
+<tr>
+<td>[abc]</td>
+<td>匹配 a, b 和 c 中的任意一个</td>
+</tr>
+<tr>
+<td>(RX1|RX2)</td>
+<td>任何能够匹配RX1 或 RX2的结果</td>
+</tr>
+<tr>
+<td>^</td>
+<td>行首</td>
+</tr>
+<tr>
+<td>$</td>
+<td>行尾</td>
+</tr>
+</tbody>
+</table>
+<h2 id="不熟悉git">不熟悉Git？</h2>
+<p><a href="https://learngitbranching.js.org/?locale=zh_CN">Learn Git Branching</a></p>
+<h1 id="121-命令行环境">1/21: 命令行环境</h1>
+<h2 id="远程连接ssh">远程连接(SSH)</h2>
+<p>不是很懂，以后补坑。</p>
+<h1 id="122-版本控制git">1/22: 版本控制(Git)</h1>
+<p>版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。</p>
+<h2 id="git-的命令行接口">Git 的命令行接口</h2>
+<h3 id="基础">基础</h3>
+<p>git help <command>: 获取 git 命令的帮助信息<br>
+git init: 创建一个新的 git 仓库，其数据会存放在一个名为 .git 的目录下<br>
+git status: 显示当前的仓库状态<br>
+git add <filename>: 添加文件到暂存区<br>
+git commit: 创建一个新的提交<br>
+如何编写 良好的提交信息!<br>
+为何要 编写良好的提交信息<br>
+git log: 显示历史日志<br>
+git log --all --graph --decorate: 可视化历史记录（有向无环图）<br>
+git diff <filename>: 显示与暂存区文件的差异<br>
+git diff <revision> <filename>: 显示某个文件两个版本之间的差异<br>
+git checkout <revision>: 更新 HEAD 和目前的分支<br>
+分支和合并</p>
+<p>git branch: 显示分支<br>
+git branch <name>: 创建分支<br>
+git checkout -b <name>: 创建分支并切换到该分支<br>
+相当于 git branch <name>; git checkout <name><br>
+git merge <revision>: 合并到当前分支<br>
+git mergetool: 使用工具来处理合并冲突<br>
+git rebase: 将一系列补丁变基（rebase）为新的基线</p>
+<h3 id="远端操作">远端操作</h3>
+<p>git remote: 列出远端<br>
+git remote add <name> <url>: 添加一个远端<br>
+git push <remote> <local branch>:<remote branch>: 将对象传送至远端并更新远端引用<br>
+git branch --set-upstream-to=<remote>/<remote branch>: 创建本地和远端分支的关联关系<br>
+git fetch: 从远端获取对象/索引<br>
+git pull: 相当于 git fetch; git merge<br>
+git clone: 从远端下载仓库</p>
+<h3 id="撤销">撤销</h3>
+<p>git commit --amend: 编辑提交的内容或信息<br>
+git reset HEAD <file>: 恢复暂存的文件<br>
+git checkout -- <file>: 丢弃修改<br>
+git restore: git2.32版本后取代git reset 进行许多撤销操作</p>
+<h3 id="git-高级操作">Git 高级操作</h3>
+<p>git config: Git 是一个 高度可定制的 工具<br>
+git clone --depth=1: 浅克隆（shallow clone），不包括完整的版本历史信息<br>
+git add -p: 交互式暂存<br>
+git rebase -i: 交互式变基<br>
+git blame: 查看最后修改某行的人<br>
+git stash: 暂时移除工作目录下的修改内容<br>
+git bisect: 通过二分查找搜索历史记录<br>
+.gitignore: 指定 故意不追踪的文件</p>
+<h3 id="杂项">杂项</h3>
+<p>图形用户界面: Git 的 图形用户界面客户端 有很多，但是我们自己并不使用这些图形用户界面的客户端，我们选择使用命令行接口<br>
+Shell 集成: 将 Git 状态集成到您的 shell 中会非常方便。(zsh, bash)。Oh My Zsh这样的框架中一般以及集成了这一功能<br>
+编辑器集成: 和上面一条类似，将 Git 集成到编辑器中好处多多。fugitive.vim 是 Vim 中集成 GIt 的常用插件<br>
+工作流: 我们已经讲解了数据模型与一些基础命令，但还没讨论到进行大型项目时的一些惯例 ( 有很多 不同的 处理方法)<br>
+GitHub: Git 并不等同于 GitHub。 在 GitHub 中您需要使用一个被称作拉取请求（pull request）的方法来向其他项目贡献代码<br>
+其他 Git 提供商: GitHub 并不是唯一的。还有像 GitLab 和 BitBucket 这样的平台。</p>
+<h1 id="123-调试及性能分析">1/23: 调试及性能分析</h1>
+<h1 id="127-元编程">1/27: 元编程</h1>
+<h1 id="128-安全和密码学">1/28: 安全和密码学</h1>
+<h1 id="129-大杂烩">1/29: 大杂烩</h1>
+<h1 id="130-提问回答">1/30: 提问&amp;回答</h1>
+<p>剩下的这几课由于当前不了解不需要，所以没有看视频只是把文档看了看，如果后期有需要再来回顾吧。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://Covatubala.github.io/tag/wX2Kq5ZK7/" class="tag">
+                    学习笔记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Covatubala.github.io/post/za-tan-emo/">
+                  <h3 class="post-title">
+                    杂谈Emo
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dced8d18bb3ce4622a5e',
+        clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
+        repo: 'covatubala.github.io',
+        owner: 'Covatubala',
+        admin: ['Covatubala'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

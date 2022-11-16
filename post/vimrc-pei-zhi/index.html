@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>vimrc配置 | Covatubala的小木屋</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Covatubala.github.io/favicon.ico?v=1668564658452">
+<link rel="stylesheet" href="https://Covatubala.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim 
+let g:ctrlp_map ='&lt;c-p&gt;'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrl..." />
+    <meta name="keywords" content="学习笔记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Covatubala.github.io">
+        <img src="https://Covatubala.github.io/images/avatar.png?v=1668564658452" class="site-logo">
+        <h1 class="site-title">Covatubala的小木屋</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Covatubala" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/ren-zi-hang-23" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      若是心向明月，纵然不慎受挫也会失落在星辰之间。<br/>
+
+
+    </div>
+    <div class="site-footer">
+      <span id="runtime_span"></span>
+<script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
+Date("05/27/2021 00:00:00");Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);runtime_span.innerHTML="本站已稳定运行："+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><br>
+<span id="busuanzi_container_site_pv">&nbsp&nbsp&nbsp本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span> | <a class="rss" href="https://Covatubala.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">vimrc配置</h2>
+            <div class="post-date">2022-07-31</div>
+            
+              <div class="feature-container" style="background-image: url('https://tva4.sinaimg.cn/large/0072Vf1pgy1fodqncwm01j31hc10xb29.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <pre><code class="language-c++">set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim 
+let g:ctrlp_map ='&lt;c-p&gt;'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+&quot; 设置默认路径为当前路径
+call plug#begin()
+Plug 'preservim/NERDTree' 
+&quot; 需要安装的插件 NERDTree
+Plug 'wikitopian/hardmode'  
+&quot; 安装 hardmode
+&quot; ..... # 更多插件
+call plug#end()
+set mouse=a	           
+&quot; 启用鼠标
+set number             
+&quot; 显示行号
+set tabstop=4          
+&quot; 按下 Tab 键时，Vim 显示的4空格
+set shiftwidth=4       
+&quot; 在文本上按下&gt;&gt;（增加一级缩进）、&lt;&lt;（取消一级缩进）或者==（取消全部缩进）时，每一级的字符数。
+set noexpandtab          
+&quot; 不将 Tab 转为空格 
+set smarttab
+&quot; 在行和段开始处使用制表符
+set autoindent         
+&quot; 按下回车键后，下一行的缩进会自动跟上一行的缩进保持一致
+set smartindent        
+&quot;  在这种缩进模式中，每一行都和前一行有相同的缩进量，同时这种缩进形式能正确的识别出花括号，当遇到右花括号（}），则取消缩进形式。
+set cursorline         
+&quot; 光标所在的当前行高亮
+set wrap               
+&quot; 自动折行，即太长的行分成几行显示
+set ruler              
+&quot; 在状态栏显示光标的当前位置（位于哪一行哪一列）
+set hlsearch           
+&quot; 搜索时，高亮显示匹配结果。
+set incsearch
+&quot; 搜索时无须全部打完再Enter
+set ignorecase         
+&quot; 搜索时忽略大小写
+set undofile           
+&quot; 保留撤销历史
+set noerrorbells visualbell t_vb=
+&quot; 出错时不发出声音
+set history=1000       
+&quot; Vim 需要记住多少次历史操作
+set encoding=utf-8     
+&quot; 使用utf-8编码
+set laststatus=2
+&quot; 始终显示状态行
+set backspace=indent,eol,start
+&quot; 使回格键（backspace）正常处理indent, eol, start等
+set clipboard+=unnamed
+&quot; 与windows共享剪贴版
+set whichwrap+=&lt;,&gt;,b,s,[,]
+&quot; 允许backspace和光标键跨越行边界
+set showmatch
+&quot; 高亮显示匹配的括号
+set matchtime=5
+&quot; 匹配括号高亮的时间（单位是十分之一秒）
+
+
+syntax on              
+&quot; 打开语法高亮
+set cc=120
+set t_Co=256           
+&quot; 启用256色
+&quot; color ron
+set autoread           
+&quot; 打开文件监视。如果在编辑过程中文件发生外部改变（比如被别的编辑器编辑了），就会发出提示
+set nobackup           
+&quot; 不创建备份文件。默认情况下，文件保存时，会额外创建一个备份文件，它的文件名是在原文件名的末尾，再添加一个波浪号（〜）
+set noswapfile        
+&quot; 不创建交换文件。交换文件主要用于系统崩溃时恢复文件，文件名的开头是.、结尾是.swp
+
+map &lt;F9&gt; &lt;ESC&gt;:w&lt;ESC&gt;:!g++ % -std=c++14 -o %&lt; &amp;&amp; time ./%&lt; &lt;CR&gt;
+map &lt;F8&gt; &lt;ESC&gt;:w&lt;ESC&gt;:!open % &lt;CR&gt;
+inoremap ( ()&lt;ESC&gt;i
+inoremap [ []&lt;ESC&gt;i
+inoremap { {}&lt;ESC&gt;i&lt;CR&gt;&lt;ESC&gt;O
+inoremap ' ''&lt;ESC&gt;i
+inoremap &quot; &quot;&quot;&lt;ESC&gt;i
+func SkipPair()  
+    if getline('.')[col('.') - 1] == ')' || getline('.')[col('.') - 1] == ']' || getline('.')[col('.') - 1] == '&quot;' || getline('.')[col('.') - 1] == &quot;'&quot; || getline('.')[col('.') - 1] == '}'  
+        return &quot;\&lt;ESC&gt;la&quot;  
+    else  
+        return &quot;\t&quot;  
+    endif  
+endfunc  
+&quot;设置跳出自动补全的括号
+inoremap &lt;TAB&gt; &lt;c-r&gt;=SkipPair()&lt;CR&gt;
+&quot; 将tab键绑定为跳出括号  
+
+nnoremap &lt;Left&gt;  :echoe &quot;Use h&quot;&lt;CR&gt;
+nnoremap &lt;Right&gt; :echoe &quot;Use l&quot;&lt;CR&gt;
+nnoremap &lt;Up&gt;    :echoe &quot;Use k&quot;&lt;CR&gt;
+nnoremap &lt;Down&gt;  :echoe &quot;Use j&quot;&lt;CR&gt;
+&quot; inoremap &lt;Left&gt;  &lt;ESC&gt;:echoe &quot;Use h&quot;&lt;CR&gt;
+&quot; inoremap &lt;Right&gt; &lt;ESC&gt;:echoe &quot;Use l&quot;&lt;CR&gt;
+&quot; inoremap &lt;Up&gt;    &lt;ESC&gt;:echoe &quot;Use k&quot;&lt;CR&gt;
+&quot; inoremap &lt;Down&gt;  &lt;ESC&gt;:echoe &quot;Use j&quot;&lt;CR&gt;
+
+</code></pre>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://Covatubala.github.io/tag/wX2Kq5ZK7/" class="tag">
+                    学习笔记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Covatubala.github.io/post/macbook-li-control-he-command-zuo-yong-qu-bie/">
+                  <h3 class="post-title">
+                    Control和Command区别
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dced8d18bb3ce4622a5e',
+        clientSecret: '2c9d756edc45764e120b028e1e5f1b857907878e',
+        repo: 'covatubala.github.io',
+        owner: 'Covatubala',
+        admin: ['Covatubala'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
